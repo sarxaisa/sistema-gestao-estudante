@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace sistema_gestao_estudante
 {
-    public partial class Login : Form
+    public partial class Login_Form : Form
     {
-        public Login()
+        public Login_Form()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace sistema_gestao_estudante
             }
             else
             {
-                MessageBox.Show("NÃO");
+                MessageBox.Show("Nome do usuário inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
