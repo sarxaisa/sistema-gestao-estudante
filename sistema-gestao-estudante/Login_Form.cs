@@ -40,10 +40,11 @@ namespace sistema_gestao_estudante
             if (tabela.Rows.Count > 0)
             {
                 MessageBox.Show("SIM");
+                this.DialogResult= DialogResult.OK;
             }
             else
             {
-                MessageBox.Show("Nome do usuário inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nome do usuário inválido","Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
